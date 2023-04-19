@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+		/>
+		<link
+			href="//cdn-images.mailchimp.com/embedcode/classic-071822.css"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<link rel="stylesheet" href="main.css" />
+		<title>Custom Mailchimp Popup Form</title>
+	</head>
+
+	<body>
+		<button type="button" class="open-modal" data-open="modal1">
+			Reveal Maichimp Popup Form
+		</button>
+
+		<div class="modal" id="modal1" data-animation="slideInOutLeft">
+			<div class="modal-dialog">
+				<header class="modal-header">
+					<h2>Get 10% OFF <span>on your next order</span></h2>
+					<img
+						width="300"
+						height="126"
+						src="https://assets.codepen.io/162656/discount10.png"
+						alt=""
+					/>
+					<button
+						class="close-modal"
+						aria-label="close modal"
+						data-close
+					>
+						✕
+					</button>
+				</header>
+				<section class="modal-content">
+					<div id="mc_embed_signup">
+						<form
+							action="PLACE_YOUR_ACTION_HERE"
+							method="post"
+							id="mc-embedded-subscribe-form"
+							name="mc-embedded-subscribe-form"
+							class="validate"
+							target="_blank"
+							novalidate
+						>
+							<div id="mc_embed_signup_scroll">
+								<div class="grid">
+									<div class="mc-field-group">
+										<input
+											type="text"
+											value=""
+											name="LNAME"
+											class="required"
+											id="mce-LNAME"
+											placeholder="Last Name"
+											required
+										/>
+									</div>
+									<div class="mc-field-group">
+										<input
+											type="text"
+											value=""
+											name="FNAME"
+											class="required"
+											id="mce-FNAME"
+											placeholder="First Name"
+											required
+										/>
+									</div>
+								</div>
+								<div class="mc-field-group">
+									<input
+										type="email"
+										value=""
+										name="EMAIL"
+										class="required email"
+										id="mce-EMAIL"
+										placeholder="Email Address"
+										required
+									/>
+								</div>
+
+								<div id="mce-responses">
+									<div
+										class="response"
+										id="mce-error-response"
+										style="display: none"
+									></div>
+									<div
+										class="response"
+										id="mce-success-response"
+										style="display: none"
+									></div>
+								</div>
+								<div
+									style="position: absolute; left: -5000px"
+									aria-hidden="true"
+								>
+									<input
+										type="text"
+										name="b_73f63fc2ce32efdc5a70cf9c6_fea17efc56"
+										tabindex="-1"
+										value=""
+									/>
+								</div>
+								<input
+									type="submit"
+									value="Subscribe"
+									name="subscribe"
+									id="mc-embedded-subscribe"
+									class="button"
+								/>
+								<p class="brandingLogo">
+									<a
+										href="http://eepurl.com/ipjC8s"
+										title="Mailchimp - email marketing made easy and fun"
+										><img
+											src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"
+									/></a>
+								</p>
+							</div>
+						</form>
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<footer class="page-footer">
+			<span>made by </span>
+			<a href="https://georgemartsoukos.com/" target="_blank">
+				<img
+					width="24"
+					height="24"
+					src="https://assets.codepen.io/162656/george-martsoukos-small-logo.svg"
+					alt="George Martsoukos logo"
+				/>
+			</a>
+		</footer>
+		<script src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+		<script>
+			(function ($) {
+				window.fnames = new Array();
+				window.ftypes = new Array();
+				fnames[0] = "EMAIL";
+				ftypes[0] = "email";
+				fnames[1] = "FNAME";
+				ftypes[1] = "text";
+				fnames[2] = "LNAME";
+				ftypes[2] = "text";
+			})(jQuery);
+			var $mcj = jQuery.noConflict(true);
+		</script>
+		<script src="main.js"></script>
+	</body>
+</html>
