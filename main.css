@@ -35,6 +35,21 @@ body {
 	font: 16px/1.5 "Poppins", sans-serif;
 }
 
+.notification {
+	position: fixed;
+	left: 10px;
+	bottom: 10px;
+	padding: 10px;
+	max-width: 300px;
+	font-size: 14px;
+	color: var(--white);
+	background: var(--dark-green);
+}
+
+.notification a {
+	text-decoration: underline;
+}
+
 .open-modal {
 	font-weight: bold;
 	color: var(--white);
